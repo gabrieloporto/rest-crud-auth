@@ -13,10 +13,15 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://rest-crud-auth-app.onrender.com",
+    origin: [
+      "https://rest-crud-auth-app.onrender.com",
+      "https://rest-crud-auth.onrender.com",
+      "https://rest-crud-auth.vercel.app",
+    ],
     credentials: true,
   })
 );
+
 app.use(cookieParser());
 app.use(morgan("dev"));
 app.use(express.json());
