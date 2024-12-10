@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://rest-crud-auth-app.onrender.com/",
+    origin: "https://rest-crud-auth-app.onrender.com",
     credentials: true,
   })
 );
