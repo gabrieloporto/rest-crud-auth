@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://rest-crud-auth-app.onrender.com/",
     credentials: true,
   })
 );
