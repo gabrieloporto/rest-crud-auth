@@ -13,11 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://rest-crud-auth-app.onrender.com",
-      "https://rest-crud-auth.onrender.com",
-      "https://rest-crud-auth.vercel.app",
-    ],
+    origin: "*",
     credentials: true,
   })
 );
